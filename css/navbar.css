@@ -1,0 +1,40 @@
+/* Navbar Styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background: #ffffff;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding-right: 50px;
+}
+
+.navbar .logo img {
+    height: 60px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+    margin-left: auto;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #654321;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.nav-links li a:hover {
+    color: #ff6600;
+}
+
+.navbar .btn-contact {
+    margin-left: 50px; 
+}
