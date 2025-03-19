@@ -1,3 +1,7 @@
+<link rel="stylesheet" href="./css/main.css">
+<link rel="stylesheet" href="./css/navbar.css">
+<link rel="stylesheet" href="./css/button.css">
+
 <nav class="navbar">
     <div class="logo">
         <img src="./images/logo.jpg" alt="Mirai School Logo">
@@ -10,4 +14,23 @@
         <li><a href="./pages/access.html">アクセス</a></li>
     </ul>
     <button class="btn-contact" href="./pages/contact.html">お問い合わせはこちら</button>
+
+    <!-- Hamburger Menu -->
+    <div class="hamburger" onclick="toggleMenu()">
+            <i class="fas fa-bars"></i>
+    </div>
+    
+    <!-- Mobile Menu Popup -->
+    <div class="mobile-menu" id="mobile-menu">
+            <span class="close-btn" onclick="toggleMenu()">&times;</span>
+            <ul class="mobile-nav-links">
+                <li><a href="./pages/about.html">ミライスクールについて</a></li>
+                <li><a href="./pages/philosophy.html">経営理念</a></li>
+                <li><a href="./pages/features.html">特徴</a></li>
+                <li><a href="./pages/blog.html">Blog</a></li>
+                <li><a href="./pages/access.html">アクセス</a></li>
+            </ul>
+            <button class="btn-contact mobile-btn">お問い合わせはこちら</button>
+    </div>
 </nav>
+<script src="./js/navbar.js"></script>

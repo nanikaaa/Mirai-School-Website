@@ -521,8 +521,8 @@
             <a href="about.html">ミライスクールについて</a>
             <a href="philosophy.html">経営理念</a>
             <a href="features.html">特徴</a>
-            <a href="access.html">アクセス</a>
             <a href="blog.html">Blog</a>
+            <a href="access.html">アクセス</a>
             <a href="contact.html">お問い合わせ</a>
             <a href="sitemap.html">サイトマップ</a>
             <a href="privacy.html">プライバシーポリシー</a>
@@ -532,10 +532,30 @@
  
     <script src="./js/navbar.js"></script>
     <script>
-        // Load Navbar
-        fetch("navbar.html")
+        fetch("./navbar.html")
             .then(response => response.text())
-            .then(data => document.getElementById("navbar-container").innerHTML = data);
+            .then(data => {
+                document.getElementById("navbar-container").innerHTML = data;
+                loadNavbarScripts();
+            });
+    
+        function loadNavbarScripts() {
+            const menu = document.getElementById("mobile-menu");
+            const hamburger = document.querySelector(".hamburger");
+            const closeBtn = document.querySelector(".close-btn");
+    
+            function toggleMenu() {
+                menu.classList.toggle("active");
+            }
+    
+            if (hamburger) {
+                hamburger.addEventListener("click", toggleMenu);
+            }
+    
+            if (closeBtn) {
+                closeBtn.addEventListener("click", toggleMenu);
+            }
+        }
     </script>
 </body>
 </html>

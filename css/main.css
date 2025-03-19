@@ -54,7 +54,7 @@ section {
     width: 50px;
     height: 50px;
     display: block;
-    margin: 0 auto 10px;
+    margin: 10px auto 10px;
 }
 
 .about-header h2 {
@@ -83,7 +83,6 @@ section {
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
-    gap: 40px;
     margin-top: 40px;
     position: relative;
 }
@@ -197,7 +196,6 @@ section {
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
-    gap: 40px;
     margin-top: 40px;
     position: relative;
 }
@@ -209,8 +207,8 @@ section {
     border-radius: 50px;
     border: 6px solid #e95a0c;
     text-align: left;
-    max-width: 500px;
-    max-height: 310px;
+    max-width: 450px;
+    max-height: 380px;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
     right: 0;
     bottom: 80px;
@@ -242,8 +240,7 @@ section {
 }
 
 .philosophy-image img {
-    width: 100%;
-    max-width: 850px;
+    max-width: 850px
 }
 
 /* Features Section */
@@ -297,13 +294,11 @@ section {
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
-    gap: 40px;
     margin-top: 40px;
     position: relative;
 }
 
 .features-image img {
-    width: 100%;
     max-width: 850px;
 }
 
@@ -380,7 +375,7 @@ section {
 .blog-header h2 {
     font-size: 66px;
     color: #e95a0c;
-    font-weight: bold;
+    font-weight: 500;
     margin: 0;
 }
 
@@ -419,7 +414,7 @@ section {
 
 .blog-date {
     font-size: 20px;
-    font-weight: bold;
+    font-weight: 500;
     margin-top: 10px;
     color: #5F4328;
 }
@@ -487,13 +482,11 @@ section {
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
-    gap: 40px;
     margin-top: 40px;
     position: relative;
 }
 
 .location-image img {
-    width: 100%;
     max-width: 850px;
 }
 
@@ -682,4 +675,442 @@ section {
 
 .footer-links a:hover {
     color: #f4a261;
+}
+
+
+/* Responsive Styles */
+@media screen and (max-width: 1200px) {
+    section {
+        margin-bottom: 80px; 
+    }
+
+    .about-header h2,
+    .philosophy-header h2, 
+    .features-header h2,
+    .blog-header h2,
+    .location-header h2, 
+    .contact-header h2 {
+        font-size: 32px;
+    }
+
+    .about-header img, 
+    .philosophy-header img, 
+    .features-header img, 
+    .blog-header img, 
+    .contact-header img{
+        width: 50px;
+        height: 50px;
+    }
+
+    .location-header img {
+        width: 40px;
+        height: 50px;
+    }
+
+    .about-text {
+        background: url(../images/card-bg.jpg) no-repeat center center;
+        background-size: cover;
+        padding: 30px;
+        border-radius: 50px;
+        border: 6px solid #e95a0c;
+        text-align: left;
+        width: 480px;
+        height: 320px;
+        box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
+        right: 0;
+        bottom: 80px;
+        transform: translate(-90px, 20px);
+        overflow: hidden;
+        position: relative;
+    }
+
+    .about-text p {
+        display: inline-block;
+        color: #5F4328;
+        line-height: 1.7;
+        font-weight: 400;
+        margin: 0;
+    }
+
+    .philosophy-image img {
+        max-width: 750px
+    }
+
+    .philosophy-text {
+        background: url(../images/card-bg.jpg) no-repeat center center;
+        background-size: cover;
+        padding: 30px;
+        border-radius: 50px;
+        border: 6px solid #e95a0c;
+        text-align: left;
+        width: 380px;
+        max-height: 300px;
+        box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
+        right: 0;
+        bottom: 40px;
+        transform: translate(100px, -20px);
+        overflow: hidden;
+        position: relative;
+    }
+
+    .philosophy-text p {
+        display: inline-block;
+        color: #5F4328;
+        line-height: 1.5;
+        font-weight: 400;
+        margin: 0;
+    }
+
+    .features-image img {
+        max-width: 750px
+    }
+
+    .features-text {
+        background: url(../images/card-bg.jpg) no-repeat center center;
+        background-size: cover;
+        padding: 30px;
+        border-radius: 50px;
+        border: 6px solid #e95a0c;
+        text-align: left;
+        width: 380px;
+        max-height: 300px;
+        box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
+        right: 0;
+        bottom: 40px;
+        transform: translate(-70px, -30px);
+        overflow: hidden;
+        position: relative;
+    }
+
+    .features-text p {
+        display: inline-block;
+        color: #5F4328;
+        line-height: 1.5;
+        font-weight: 400;
+        margin: 0;
+    }
+
+    .location-image img {
+        max-width: 750px
+    }
+
+    .location-text {
+        background: url(../images/card-bg.jpg) no-repeat center center;
+        background-size: cover;
+        padding: 30px;
+        border-radius: 50px;
+        border: 6px solid #e95a0c;
+        text-align: left;
+        width: 390px;
+        max-height: 300px;
+        box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
+        right: 0;
+        bottom: 40px;
+        transform: translate(-70px, -30px);
+        overflow: hidden;
+        position: relative;
+    }
+
+    .location-text p {
+        display: column;
+        color: #5F4328;
+        line-height: 1.5;
+        font-weight: 400;
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    section {
+        margin-bottom: 60px; 
+    }
+
+    .about-header h2,
+    .philosophy-header h2, 
+    .features-header h2,
+    .blog-header h2,
+    .location-header h2, 
+    .contact-header h2 {
+        font-size: 28px;
+    }
+
+    .about-header img, 
+    .philosophy-header img, 
+    .features-header img, 
+    .blog-header img, 
+    .contact-header img{
+        width: 50px;
+        height: 50px;
+    }
+
+    .location-header img {
+        width: 40px;
+        height: 50px;
+    }
+
+    .about-content {
+        display: flex;
+        margin-top: 0;
+        position: relative;
+        flex-wrap: nowrap;
+        align-items: stretch;
+        flex-direction: row;
+        gap: 10px;
+    }
+
+    .about-image img {
+        max-width: 650px;
+    }
+
+    .about-text {
+        background: url(../images/card-bg.jpg) no-repeat center center;
+        background-size: cover;
+        padding: 10px;
+        border-radius: 15px;
+        border: 4px solid #e95a0c;
+        text-align: left;
+        max-width: 40%;
+        max-height: 60%;
+        box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
+        right: 0;
+        bottom: 80px;
+        transform: translate(-10px, 20px);
+        overflow: hidden;
+        position: absolute;
+    }
+    .about-text::before{
+        border-radius: 15px;
+    }
+
+    .about-text p {
+        display: inline-block;
+        color: #5F4328;
+        line-height: 1.5;
+        font-weight: 400;
+        margin: 0;
+        font-size: 14px;
+    }
+
+    .philosophy-image img {
+        max-width: 650px
+    }
+
+    .philosophy-text {
+        background: url(../images/card-bg.jpg) no-repeat center center;
+        background-size: cover;
+        padding: 10px;
+        border-radius: 15px;
+        border: 4px solid #e95a0c;
+        text-align: left;
+        max-width: 50%;
+        max-height: 60%;
+        box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
+        right: 0;
+        bottom: 80px;
+        transform: translate(60px, 20px);
+        overflow: hidden;
+        position: relative;
+    }
+    .philosophy-text::before{
+        border-radius: 15px;
+    }
+
+    .philosophy-text p {
+        display: inline-block;
+        color: #5F4328;
+        line-height: 1.5;
+        font-weight: 400;
+        margin: 0;
+        font-size: 14px;
+    }
+
+    .features-image img {
+        max-width: 650px
+    }
+
+    .features-text {
+        background: url(../images/card-bg.jpg) no-repeat center center;
+        background-size: cover;
+        padding: 20px;
+        border-radius: 15px;
+        border: 4px solid #e95a0c;
+        text-align: left;
+        width: 100%;
+        max-height: 40%;
+        box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
+        right: 0;
+        bottom: 40px;
+        transform: translate(-70px, -20px);
+        overflow: hidden;
+        position: relative;
+    }
+
+    .features-text::before{
+        border-radius: 15px;
+    }
+
+    .features-text p {
+        display: inline-block;
+        color: #5F4328;
+        line-height: 1.7;
+        font-weight: 400;
+        margin: 0;
+        font-size: 14px;
+    }
+
+    .location-image img {
+        max-width: 650px
+    }
+
+    .location-text {
+        background: url(../images/card-bg.jpg) no-repeat center center;
+        background-size: cover;
+        padding: 15px;
+        border-radius: 25px;
+        border: 4px solid #e95a0c;
+        text-align: left;
+        width: 100%;
+        height: 50%;
+        box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
+        right: 0;
+        bottom: 40px;
+        transform: translate(-70px, -30px);
+        overflow: hidden;
+        position: relative;
+    }
+
+    .location-text::before{
+        border-radius: 15px;
+    }
+
+    .location-text h3 {
+        padding-left: 30px;
+    }
+
+    .location-text p {
+        display: column;
+        color: #5F4328;
+        line-height: 1.5;
+        font-weight: 400;
+        margin: 0;
+        font-size: 14px;
+        padding-left: 30px;
+    }   
+}
+
+@media screen and (max-width: 768px) {
+    section {
+        margin-bottom: 50px; 
+    }
+
+    .about-header h2, 
+    .philosophy-header h2, 
+    .features-header h2, 
+    .contact-header h2, 
+    .blog-button h2, 
+    .location-header h2 {
+        font-size: 24px;
+    }
+
+    .about-header img, 
+    .philosophy-header img, 
+    .features-header img, 
+    .blog-header img, 
+    .contact-header img{
+        width: 35px;
+        height: 35px;
+    }
+    
+    .blog-posts {
+        gap: 15px;
+        margin-top: 30px;
+    }
+
+    .blog-card img {
+        width: 100%;
+        border-radius: 5px;
+    }
+
+    .blog-date{
+        font-size: 16px;
+        font-weight: 500;
+    }
+
+    .blog-text {
+        font-size: 14px;
+        color: #5F4328;
+        line-height: 1.6;
+        margin-top: 5px;
+    }
+
+    .contact-section {
+        background: url("../images/contact-bg.png") no-repeat center center;
+        background-size: cover;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        gap: 10px;
+        text-align: center;
+        margin-top: 80px;
+        max-width: 100%;
+        overflow: hidden;
+        margin: 0 auto;
+        position: relative;
+    }
+
+    .contact-header p {
+        font-size: 14px;
+        font-weight: 400;
+    }
+
+    .footer-section {
+        text-align: center;
+        color: white;
+        max-width: 100%;
+    }
+
+    .footer-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        max-width: 100%;
+        max-height: 130px;
+        padding-right: 20px;
+        position: relative;
+    }
+
+    .footer-logo-bg {
+        background-color: #EA5413;
+        border-radius: 0 20px 0 0;
+        align-items: center;
+        width: 350px;
+        height: 150px;
+        position: relative;
+        transform: translate(-5px, -10px);
+        padding: 0%;
+    }
+
+    .footer-logo-bg img {
+        padding-top: 20px;
+        max-width: 120px;
+        max-height: 40px;
+    }
+
+    .footer-copyright {
+        font-size: 10px;
+        color: white;
+        padding-left: 30px;
+        text-align: left;
+        padding-bottom: 20px;
+    }
+
+    .footer-links {
+        gap: 5px 20px;
+        max-width: 600px; 
+        margin-left: 20px; 
+    }
+
+    .footer-links a {
+        font-size: 10px;
+    }
+
 }
