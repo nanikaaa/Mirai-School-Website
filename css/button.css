@@ -62,3 +62,98 @@ button {
 .btn-see-more:hover i {
     transform: translateX(3px);
 }
+
+/* ====== Responsive Breakpoints ====== */
+
+/* 1200px */
+@media (max-width: 1200px) {
+    .btn-contact, .btn-contact-section {
+        padding: 10px 10px;
+        width: 160px;
+        font-size: 12px;
+    }
+
+    .btn-see-more {
+        padding: 8px 8px;
+        width: 150px;
+        font-size: 12px;
+    }
+}
+
+/* 1024px */
+@media (max-width: 1024px) {
+    .btn-contact, .btn-contact-section {
+        padding: 8px 8px;
+        width: 120px;
+        height: 25px;
+        font-size: 12px;
+    }
+
+    .btn-see-more {
+        padding: 8px 10px;
+        width: 120px;
+        font-size: 12px;
+    }
+}
+
+
+/* 768px */
+@media (max-width: 769px) {
+    .btn-contact, .btn-contact-section {
+        padding: 8px 15px;
+        width: 150px;
+        font-size: 13px;
+    }
+
+    .btn-see-more {
+        padding: 8px 14px;
+        width: 140px;
+        font-size: 11px;
+    }
+
+}
+
+/* 425px */
+@media (max-width: 425px) {
+    .btn-contact, .btn-contact-section {
+        padding: 6px 12px;
+        width: 140px;
+        font-size: 12px;
+    }
+
+    .btn-see-more {
+        padding: 6px 12px;
+        width: 130px;
+        font-size: 10px;
+    }
+}
+
+/* 375px */
+@media (max-width: 375px) {
+    .btn-contact, .btn-contact-section {
+        padding: 5px 10px;
+        width: 130px;
+        font-size: 11px;
+    }
+
+    .btn-see-more {
+        padding: 5px 10px;
+        width: 120px;
+        font-size: 9px;
+    }
+}
+
+/* 320px */
+@media (max-width: 320px) {
+    .btn-contact, .btn-contact-section {
+        padding: 4px 8px;
+        width: 120px;
+        font-size: 10px;
+    }
+
+    .btn-see-more {
+        padding: 4px 8px;
+        width: 110px;
+        font-size: 8px;
+    }
+}
