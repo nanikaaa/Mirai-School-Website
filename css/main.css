@@ -11,12 +11,19 @@ section {
     max-width: 100%;
 }
 
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden; /* Prevents horizontal scrolling */
+}
+
 /* Hero Section */
 .hero {
     background-color: #ffffff;
     max-width: 1440px;
     margin-top: 0;
-    /* margin: 0 auto; */
+    margin: 0 auto;
     /* height: 100vh; */
     overflow: hidden;
     display: flex;
@@ -45,10 +52,10 @@ section {
 
 .about-header {
     display: flex;
-    flex-direction: column; /* Ensures elements stack vertically */
+    flex-direction: column; 
     align-items: center;
-    gap: 0; /* Adds spacing between elements */
-    margin-bottom: 30px; /* Adds space below the header */
+    gap: 0; 
+    margin-bottom: 30px; 
 }
 
 .about-header img {
@@ -94,18 +101,18 @@ section {
 }
 
 .about-text {
-    background: url("../images/card-bg.jpg") no-repeat center center;
+    background: url(../images/card-bg.jpg) no-repeat center center;
     background-size: cover;
     padding: 50px;
     border-radius: 50px;
     border: 6px solid #e95a0c;
     text-align: left;
-    width: 500px;
-    height: 320px;
+    width: 550px;
+    height: 450px;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
     right: 0;
     bottom: 80px;
-    transform: translate(-110px, 40px);
+    transform: translate(-120px, 0px);
     overflow: hidden;
     position: relative;
 }
@@ -201,18 +208,18 @@ section {
 }
 
 .philosophy-text {
-    background: url("../images/card-bg.jpg") no-repeat center center;
+    background: url(../images/card-bg.jpg) no-repeat center center;
     background-size: cover;
     padding: 40px;
     border-radius: 50px;
     border: 6px solid #e95a0c;
     text-align: left;
-    max-width: 450px;
-    max-height: 380px;
+    max-width: 550px;
+    max-height: 400px;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
     right: 0;
     bottom: 80px;
-    transform: translate(120px, -0px);
+    transform: translate(50px, 180px);
     overflow: hidden;
     position: relative;
 }
@@ -303,18 +310,18 @@ section {
 }
 
 .features-text {
-    background: url("../images/card-bg.jpg") no-repeat center center;
+    background: url(../images/card-bg.jpg) no-repeat center center;
     background-size: cover;
     padding: 50px;
     border-radius: 50px;
     border: 6px solid #e95a0c;
     text-align: left;
-    width: 500px;
-    height: 320px;
+    width: 550px;
+    height: 400px;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
     right: 0;
     bottom: 80px;
-    transform: translate(-110px, 40px);
+    transform: translate(-120px, -20px);
     overflow: hidden;
     position: relative;
 }
@@ -491,19 +498,19 @@ section {
 }
 
 .location-text {
-    background: url("../images/card-bg.jpg") no-repeat center center;
+    background: url(../images/card-bg.jpg) no-repeat center center;
     background-size: cover;
     padding: 50px;
     padding-left: 80px;
     border-radius: 50px;
     border: 6px solid #EA5413;
     text-align: left;
-    width: 500px;
-    height: 330px;
+    width: 550px;
+    height: 400px;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
     right: 0;
     bottom: 80px;
-    transform: translate(-130px, 20px);
+    transform: translate(-130px, -20px);
     overflow: hidden;
     position: relative;
 }
@@ -538,7 +545,7 @@ section {
 .location-text p {
     flex-direction: column;
     color: #5F4328;
-    line-height: 1;
+    line-height: 1.7;
     font-weight: 400;
 }
 
@@ -615,7 +622,7 @@ section {
     align-items: center;
     justify-content: space-between;
     max-width: 1440px;
-    max-height: 240px;
+    max-height: 220px;
     padding-right: 40px;
     position: relative;
 }
@@ -637,7 +644,7 @@ section {
     border-radius: 0 40px 0 0;
     align-items: center;
     width: 480px; 
-    height: 200px; 
+    height: 260px; 
     position: relative;
     padding-top: 80px;
     transform: translate(-1px, -20px);
@@ -1050,6 +1057,7 @@ section {
         margin: 0;
         padding: 0;
         overflow: hidden;
+        padding-top: 100px;
     }
 
     .hero img {
@@ -1242,14 +1250,43 @@ section {
 
 /* Responsive Styles for 425px */
 @media screen and (max-width: 425px) {
+    section {
+        margin-bottom: 10px; 
+        max-width: 100%;
+    }
+
+
     .hero img {
-        width: 100%;
+        width: 120vw;
         height: auto;
-        margin: 0 auto;
+        margin-left: -10vw;
         padding: 0;
     }
 
-    .about-content, .philosophy-content, .features-content, .location-content {
+    .about-header img, .philosophy-header img, .features-header img, .blog-header img, .contact-header img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .location-header img {
+        width: 20px;
+        height: 30px;
+    }
+
+    .philosophy-image img, 
+    .features-image img, 
+    .location-image img {
+        max-width: 405px
+    }
+
+    .blog-card img {
+        width: 300px;
+    }
+
+    .about-content, 
+    .philosophy-content, 
+    .features-content, 
+    .location-content {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -1257,36 +1294,64 @@ section {
         margin: 0 10px;
     }
 
+    .about-divider span:nth-child(n+25),
+    .philosophy-divider span:nth-child(n+25),
+    .features-divider span:nth-child(n+25),
+    .blog-divider span:nth-child(n+25),
+    .location-divider span:nth-child(n+25),
+    .contact-divider span:nth-child(n+25) {
+        display: none; /* Hide spans from the 25th onward */
+    }
+
     .about-text,
     .philosophy-text,
     .features-text,
     .location-text {
-        max-width: 300px;
-        max-height: 200px;
-        padding: 15px;
-        margin-top: 20px;
-        margin-left: 0;
+        max-width: 350px;
+        max-height: 240px;
+        padding: 20px;
+        margin-top: -80px;
+        margin-left: 20;
+        margin-bottom: 30px;
         border-radius: 20px;
+        border: 3px solid #e95a0c;
     }
 
     .about-text p,
     .philosophy-text p,
     .features-text p,
     .location-text p {
-        font-size: 11px;
+        font-size: 9px;
+    }
+
+    .blog-text, .blog-date{
+        font-size: 12px;
+        margin: 10px 25px;
+        width: 90%;
+    }
+
+    .blog-button {
+        margin-top: 10;
+    }
+    .footer-logo-bg img {
+        width: 150px;
+        height: auto;
     }
 }
 
 /* Responsive Styles for 375px */
 @media screen and (max-width: 375px) {
     .hero img {
-        width: 100%;
+        width: 120vw;
         height: auto;
-        margin: 0 auto;
+        margin-left: -5vw;
         padding: 0;
     }
 
-    .about-content, .philosophy-content, .features-content, .location-content {
+    .about-content, 
+    .philosophy-content, 
+    .features-content, 
+    .location-content {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -1294,16 +1359,45 @@ section {
         margin: 0 10px;
     }
 
-    .about-text,
-    .philosophy-text,
-    .features-text,
-    .location-text {
-        max-width: 270px;
-        max-height: 180px;
+    .about-header img, .philosophy-header img, .features-header img, .blog-header img, .contact-header img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .location-header img {
+        width: 20px;
+        height: 30px;
+    }
+
+    .philosophy-image img, 
+    .features-image img, 
+    .location-image img {
+        max-width: 355px
+    }
+
+    .blog-card img {
+        width: 100%;
+    }
+
+    .about-text,.features-text {
+        max-width: 320px;
+        max-height: 240px;
         padding: 12px;
-        margin-top: 15px;
+        margin-top: -30;
+        margin-left: 30;
+        border-radius: 18px;
+        border: 3px solid #e95a0c;
+    }
+
+    .philosophy-text,
+    .location-text {
+        max-width: 320px;
+        max-height: 240px;
+        padding: 12px;
+        margin-top: -30;
         margin-left: 0;
         border-radius: 18px;
+        border: 3px solid #e95a0c;
     }
 
     .about-text p,
@@ -1312,35 +1406,69 @@ section {
     .location-text p {
         font-size: 10px;
     }
+
+    .blog-text p, .blog-date p{
+        font-size: 10px;
+    }
+
+    .blog-button {
+        margin-top: 10px;
+    }
+
+    .footer-logo-bg img {
+        width: 150px;
+        height: auto;
+    }
 }
 
 /* Responsive Styles for 320px */
 @media screen and (max-width: 320px) {
     .hero img {
-        width: 100%;
+        width: 120vw;
         height: auto;
-        margin: 0 auto;
+        margin-left: -5vw;
         padding: 0;
     }
+
+    .philosophy-image img, 
+    .features-image img, 
+    .location-image img {
+        max-width: 300px
+    }
+
+    .blog-card img {
+        width: 250px;
+    }
+
 
     .about-content, .philosophy-content, .features-content, .location-content {
         display: flex;
         flex-direction: column;
         align-items: center;
-        gap: 20px;
+        gap: 10px;
         margin: 0 10px;
     }
 
     .about-text,
     .philosophy-text,
-    .features-text,
     .location-text {
-        max-width: 240px;
-        max-height: 150px;
+        max-width: 250px;
+        max-height: 220px;
         padding: 10px;
-        margin-top: 10px;
-        margin-left: 0;
+        margin-top: -60px;
+        margin-left: 30;
         border-radius: 15px;
+        border: 3px solid #e95a0c;
+    }
+
+    .features-text {
+        max-width: 250px;
+        max-height: 250px;
+        padding: 10px;
+        margin-top: -60px;
+        margin-left: 30;
+        border-radius: 15px;
+        border: 3px solid #e95a0c;
     }
 
     .about-text p,
@@ -1348,5 +1476,19 @@ section {
     .features-text p,
     .location-text p {
         font-size: 9px;
+    }
+
+    .blog-section {
+        padding-bottom: 20px;
+    }
+
+    .blog-text, .blog-date{
+        font-size: 12px;
+        margin: 10px 10px;
+        width: 90%;
+    }
+
+    .blog-button {
+        margin-top: 10;
     }
 }

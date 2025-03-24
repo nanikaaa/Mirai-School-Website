@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Mirai School</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/navbar.css">
+    <link rel="stylesheet" href="./css/button.css">
+    <link rel="stylesheet" href="./css/about.css">
+</head>
+<body>
+    <header>
+        <!-- Include Navbar -->
+        <div id="navbar-container"></div>
+    </header>
+
+    <section class="hero">
+        <img src="./images/about-section-1.jpg" alt="Main Visual" class="hero-image">
+        <h1 class="about-title">ミライスクールについて</h1>
+    </section>
+
+    <section class="about-section">
+        <div class="about-container">
+            <div class="about-header">
+                <h2>ミライスクールについて <i class="fa-solid fa-building"></i></h2>
+                <div class="about-divider"></div>
+            </div>
+
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="./images/about-section-2.jpg" alt="Parent and Child Reading Together">
+                </div>
+                <div class="about-text">
+                    <h3>個別療育と小集団療育を提供</h3>
+                    <ul>
+                        <li>・1コマ45分の療育を提供しています。</li>
+                        <li>・スタッフの担当制を採用しています。</li>
+                        <li>・オーダーメイドのプログラムを提供しています。</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>専門職による療育を提供</h3>
+                    <p>多様な資格を持つスタッフが在籍しています。公認心理師、保育士、作業療法士など、各スタッフがそれぞれの専門知識を活かして子どもたちの支援に取り組んでいます。相互連携を図りながら、全スタッフがお子さんの様子や情報を共有していますので、スタッフ同士でのサポート体制も整えています。</p>
+                </div>
+                <div class="about-image">
+                    <img src="./images/about-section-3.jpg" alt="Specialist Therapy Session">
+                </div>
+            </div>
+
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="./images/about-section-4.jpg" alt="Individual Support Planning">
+                </div>
+                <div class="about-text">
+                    <h3>個別支援計画のご提案と計画書作成のお手伝い</h3>
+                    <p>お子さんに合わせた療育計画をまとめた「個別支援計画」を作成いたします。この計画は保護者様の意見を尊重して策定され、お子様の成長に合わせて6ヶ月ごとに見直しと更新いたします。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer-section">
+        <div class="footer-container">
+            <div class="footer-logo-bg">
+                <img src="./images/logo-no-bg.png" alt="MiraiSchool Logo">
+                <p class="footer-copyright">copyright</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        fetch("./navbar.html")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("navbar-container").innerHTML = data;
+
+                // Update About link in navbar to point to about.html
+                const aboutLinks = document.querySelectorAll("a[href='about.html']");
+                aboutLinks.forEach(link => link.setAttribute('href', './about.html'));
+            })
+            .catch(error => console.error("Error loading navbar: ", error));
+    </script>
+</body>
+</html>

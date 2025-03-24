@@ -109,6 +109,11 @@ button {
         padding: 8px 14px;
         width: 140px;
         font-size: 11px;
+        display: flex;                 /* Enables Flexbox */
+        justify-content: center;        /* Centers content horizontally */
+        align-items: center;            /* Centers content vertically */
+        margin: 10px auto;
+        gap: 5px;    
     }
 
 }
@@ -117,14 +122,20 @@ button {
 @media (max-width: 425px) {
     .btn-contact, .btn-contact-section {
         padding: 6px 12px;
-        width: 140px;
-        font-size: 12px;
+        width: 120px;
+        font-size: 11px;
     }
 
     .btn-see-more {
         padding: 6px 12px;
-        width: 130px;
-        font-size: 10px;
+        width: 120px;
+        font-size: 11px;
+        border: 3px solid #e95a0c;
+        display: flex;                 /* Enables Flexbox */
+        justify-content: center;        /* Centers content horizontally */
+        align-items: center;            /* Centers content vertically */
+        margin: 10px auto;
+        gap: 5px;    
     }
 }
 
@@ -140,6 +151,12 @@ button {
         padding: 5px 10px;
         width: 120px;
         font-size: 9px;
+        border: 3px solid #e95a0c;
+        display: flex;                 /* Enables Flexbox */
+        justify-content: center;        /* Centers content horizontally */
+        align-items: center;            /* Centers content vertically */
+        margin: 10px auto;
+        gap: 5px;    
     }
 }
 
@@ -155,5 +172,11 @@ button {
         padding: 4px 8px;
         width: 110px;
         font-size: 8px;
+        margin-top: 5px;
+        display: flex;                 /* Enables Flexbox */
+        justify-content: center;        /* Centers content horizontally */
+        align-items: center;            /* Centers content vertically */
+        margin: 10px auto;
+        gap: 5px;    
     }
 }

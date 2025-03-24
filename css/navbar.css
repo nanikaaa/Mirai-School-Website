@@ -59,7 +59,7 @@
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5); /* Darken the background */
-    z-index: 2900; /* Just below the mobile menu */
+    z-index: 2999; /* Just below the mobile menu */
     display: none; /* Initially hidden */
 }
 
@@ -147,7 +147,13 @@
     }
     
     .navbar {
+        position: fixed; /* Makes the navbar stick to the top */
+        top: 0;
+        left: 0;
+        right: 0;
         width: 100%;
+        background: #ffffff;
+        z-index: 1000;
     }
 
     .nav-links, .btn-contact {
@@ -200,6 +206,14 @@
         color: #654321;
         font-size: 18px;
         font-weight: 500;
+        transition: all 0.3s; /* Smooth transition for hover effect */
+    }
+
+    .mobile-nav-links a:hover {
+        color: #ff6600; /* Change color on hover */
+        background-color: #F3E9DD; /* Add background effect */
+        padding: 5px 15px; /* Adds padding to highlight the link */
+        border-radius: 8px; /* Makes the hover effect look smooth */
     }
 
     .mobile-btn {
@@ -242,7 +256,7 @@
 /* Responsive Styles for 425px */
 @media screen and (max-width: 425px) {
     .mobile-menu {
-        width: 50%; /* Make it cover more screen space */
+        width: 60%; /* Make it cover more screen space */
         padding: 20px;
     }
 
@@ -268,7 +282,7 @@
 /* Responsive Styles for 375px */
 @media screen and (max-width: 375px) {
     .mobile-menu {
-        width: 50%; 
+        width: 70%; 
         padding: 15px;
     }
 
@@ -294,7 +308,7 @@
 /* Responsive Styles for 320px */
 @media screen and (max-width: 320px) {
     .mobile-menu {
-        max-width: 50%;
+        max-width: 70%;
         padding: 10px;
     }
 

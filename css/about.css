@@ -1,0 +1,128 @@
+/* About Page Styles */
+.about-title {
+    text-align: center;
+    font-size: 48px;
+    color: #e95a0c;
+    margin: 20px 0;
+}
+
+.about-section {
+    background-color: #ffffff;
+    padding: 40px 0;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.about-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.about-header h2 {
+    font-size: 40px;
+    font-weight: 600;
+    color: #e95a0c;
+}
+
+.about-divider {
+    width: 200px;
+    height: 3px;
+    background-color: #e95a0c;
+    margin: 15px auto;
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 40px 0;
+    gap: 20px;
+}
+
+.about-image img {
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.1);
+}
+
+.about-text {
+    width: 50%;
+    padding: 20px;
+    color: #5F4328;
+}
+
+.about-text h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #e95a0c;
+}
+
+.about-text p,
+.about-text ul {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.about-text ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.about-text li {
+    margin-bottom: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .about-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-text,
+    .about-image {
+        width: 100%;
+    }
+
+    .about-text {
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .about-title {
+        font-size: 36px;
+    }
+
+    .about-header h2 {
+        font-size: 32px;
+    }
+
+    .about-text h3 {
+        font-size: 20px;
+    }
+
+    .about-text p,
+    .about-text ul {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 425px) {
+    .about-title {
+        font-size: 28px;
+    }
+
+    .about-header h2 {
+        font-size: 24px;
+    }
+
+    .about-text h3 {
+        font-size: 18px;
+    }
+
+    .about-text p,
+    .about-text ul {
+        font-size: 14px;
+    }
+}
